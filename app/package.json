@@ -1,0 +1,17 @@
+{
+  "name": "vue-cli-gui",
+  "productName": "Vue CLI GUI",
+  "version": "0.0.0",
+  "description": "my kickass project",
+  "author": {
+    "name": "egoist",
+    "email": "0x142857@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-config": "^1.0.0",
+    "electron-context-menu": "^0.9.1",
+    "electron-debug": "^1.1.0",
+    "electron-is-dev": "^0.2.0"
+  }
+}
