@@ -55,11 +55,11 @@ function createMainWindow() {
 
   const RE = /Ready on http:\/\/localhost:(\d+)/
 
-  const port = 8347
-  cmd = spawn('vue', ['ui', '--headless', '--port', port])
+  cmd = spawn('vue', ['ui', '--headless'])
   cmd.stdout.on('data', chunk => {
     const str = chunk.toString()
     if (RE.test(str)) {
+      const [, port] = RE.exec(str)
       win.loadURL(`http://localhost:${port}/project/select`)
       win.show()
     }
