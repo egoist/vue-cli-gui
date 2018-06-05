@@ -2,7 +2,7 @@
 
 ## Preview
 
-Just an Electron around the `vue ui` command, nothing interesting.
+Just an Electron wrapper around the `vue ui` command, nothing interesting.
 
 <img src="https://i.loli.net/2018/06/05/5b1636b7ca131.png" alt="preview" width="500">
 
