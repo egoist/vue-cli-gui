@@ -9,8 +9,6 @@ const pkg = require('./package')
 require('electron-debug')()
 require('electron-context-menu')()
 
-process.env.PATH = `/usr/local/bin:${process.env.PATH}`
-
 const isDev = typeof process.env.NODE_ENV === 'string'
   ? (process.env.NODE_ENV === 'development')
   : require('electron-is-dev')
@@ -55,7 +53,11 @@ function createMainWindow() {
 
   const RE = /Ready on http:\/\/localhost:(\d+)/
 
-  cmd = spawn('vue', ['ui', '--headless'])
+  cmd = spawn('vue', ['ui', '--headless'], {
+    env: Object.assign({}, process.env, {
+      PATH: require('shell-path').sync()
+    })
+  })
   cmd.stdout.on('data', chunk => {
     const str = chunk.toString()
     if (RE.test(str)) {

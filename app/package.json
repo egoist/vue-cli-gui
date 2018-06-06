@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-gui",
   "productName": "Vue CLI GUI",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "my kickass project",
   "author": {
     "name": "egoist",
@@ -12,6 +12,7 @@
     "electron-config": "^1.0.0",
     "electron-context-menu": "^0.9.1",
     "electron-debug": "^1.1.0",
-    "electron-is-dev": "^0.2.0"
+    "electron-is-dev": "^0.2.0",
+    "shell-path": "^2.1.0"
   }
 }
