@@ -16,9 +16,9 @@ npm i -g @vue/cli
 
 Then [download this app](https://github.com/egoist/vue-cli-gui/releases).
 
-and navigate to your <code>vue-cli-gui</code> Folder, 
+And navigate to your <code>vue-cli-gui</code> Folder, 
 
-Then in the terminal use <code>vue ui</code>
+Then in the terminal use <code>$ vue ui</code>
 
 This will 🚀  Starting GUI...
 🌠  Ready on http://localhost:8000
