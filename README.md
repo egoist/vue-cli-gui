@@ -15,7 +15,7 @@ npm i -g @vue/cli
 ```
 
 Then [download this app](https://github.com/egoist/vue-cli-gui/releases).
-and navigate to your <code>vue-cli-gui</code>
+and navigate to your <code>vue-cli-gui</code> Folder, 
 Then in the terminal use <code>vue ui</code>
 
 ## License
